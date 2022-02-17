@@ -1763,6 +1763,7 @@ svg path {
   }
 
   .header__container {
+    width: 668px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1793,6 +1794,7 @@ svg path {
     border: none;
     margin-top: 6px;
     margin-left: 40px;
+    margin-bottom: 16px;
     display: block;
     cursor: pointer;
   }
@@ -1800,6 +1802,8 @@ svg path {
   .header__logo {
     width: 187px;
     height: 42px;
+    margin-top: 10px;
+    margin-right: 213px;
   }
 
   .header__menu {
@@ -1811,7 +1815,7 @@ svg path {
     width: 320px;
     height: 600px;
     background-color: #000;
-    transform: translateX(150%);
+    transform: translateX(-200%);
     transition: transform .5s ease-in-out;
     z-index: 5;
   }
@@ -1845,7 +1849,10 @@ svg path {
   }
 
   .header-top__search {
+    position: relative;
     display: block;
+    margin-top: 10px;
+    margin-right: -150px;
   }
 
   .header-top__search-input {
@@ -2022,6 +2029,9 @@ svg path {
   /*contacts*/
 
   .contacts__wrap {
+    width: 100%;
+    height: 464px;
+    margin-bottom: 25px;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -2037,7 +2047,7 @@ svg path {
   }
 
   .contacts__form-button {
-    margin-bottom: 42.5px;
+    margin-bottom: 30px;
   }
 
   .contacts__form-button--mobile {
@@ -2055,6 +2065,7 @@ svg path {
   }
 
   .header__container {
+    width: 290px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2090,6 +2101,7 @@ svg path {
   .header__logo {
     width: 97px;
     height: 20px;
+    margin-left: 0px;
   }
 
   .header__menu {
@@ -2121,10 +2133,12 @@ svg path {
   }
 
   .nav__list {
+    position: relative;
+    margin-top: 16px;
     flex-direction: column;
     justify-content: space-between;
     white-space: nowrap;
-    z-index: 5;
+    z-index: 15;
   }
 
   .enter {
@@ -2135,6 +2149,7 @@ svg path {
     padding: 10.5px 31.5px;
     border: 1px solid #9D5CD0;
     border-radius: 100px;
+    margin-left: 20px;
   }
 
   .nav__link {
@@ -2154,6 +2169,8 @@ svg path {
 
   .header-top__search {
     display: block;
+    margin-top: 10px;
+    margin-right: 15px;
   }
 
   .header-top__search-input {
@@ -2360,16 +2377,23 @@ svg path {
 
   /*contacts*/
 
+  .contacts__wrap {
+    width: 290px;
+    height: 347px;
+  }
+
   .contacts__adress {
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
     margin-bottom: 20px;
+    margin-top: 0;
   }
 
-  .contacts__wrap {
-    width: 290px;
-    height: 347px;
+  .contacts__form {
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 20px;
   }
 
   .contacts__form-button {
@@ -2377,12 +2401,12 @@ svg path {
   }
 
   .contacts__form-button--mobile {
+    display: block;
     width: 128px;
     height: 40px;
     border-radius: 100px;
     border-color: #9d5cd0;
     color: #9d5cd0;
-    margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -2397,13 +2421,16 @@ svg path {
   }
 
   .contacts__social {
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 
   #contactsMap {
     position: relative;
-    margin-top: 380px;
+    margin-top: 130px;
   }
+
+
 
   /*footer*/
 
