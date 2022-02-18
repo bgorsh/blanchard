@@ -1803,7 +1803,6 @@ svg path {
     width: 187px;
     height: 42px;
     margin-top: 10px;
-    margin-right: 213px;
   }
 
   .header__menu {
@@ -1841,7 +1840,6 @@ svg path {
   }
 
   .nav__list {
-    margin-top: -240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2094,6 +2092,7 @@ svg path {
     border: none;
     margin-top: 6px;
     margin-left: 25px;
+    margin-bottom: -16px;
     display: block;
     cursor: pointer;
   }
