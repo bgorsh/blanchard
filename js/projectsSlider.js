@@ -32,6 +32,7 @@ let projectsSlider = new Swiper(sliderTwo, {
 
     1920: {
       slidesPerView: 3,
+      slidesPerGroup: 3
     }
   }
 });
