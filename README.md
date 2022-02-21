@@ -1,2 +1,0 @@
-# blanchard
-Its my project
