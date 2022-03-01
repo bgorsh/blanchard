@@ -30,9 +30,21 @@ let projectsSlider = new Swiper(sliderTwo, {
       slidesPerGroup: 2,
     },
 
+    1280: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+
+    1561: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+
     1920: {
       slidesPerView: 3,
-      slidesPerGroup: 3
+      slidesPerGroup: 3,
+      spaceBetween: 50,
     }
   }
 });

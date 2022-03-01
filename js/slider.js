@@ -40,5 +40,12 @@ let gallerySlider = new Swiper(".swiper-right--content", {
       },
       spaceBetween: 50,
     },
+
+    1561: {
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30
+    }
   },
 });
