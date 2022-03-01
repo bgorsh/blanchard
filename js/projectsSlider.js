@@ -1,15 +1,15 @@
-const sliderTwo = document.querySelector('.projects__slider-container');
+const sliderTwo = document.querySelector(".projects__slider-container");
 
 let projectsSlider = new Swiper(sliderTwo, {
   loop: false,
   slidesPerView: 3,
   slidesPerGroup: 3,
-  slideClass: 'projects__slider-slide',
-  wrapperClass: 'projects__slider-wrapper',
+  slideClass: "projects__slider-slide",
+  wrapperClass: "projects__slider-wrapper",
   spaceBetween: 50,
   navigation: {
-    nextEl: '.projects__swiper-button-next',
-    prevEl: '.projects__swiper-button-prev',
+    nextEl: ".projects__swiper-button-next",
+    prevEl: ".projects__swiper-button-prev",
   },
   speed: 1000,
 
@@ -22,7 +22,7 @@ let projectsSlider = new Swiper(sliderTwo, {
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween:34,
+      spaceBetween: 34,
     },
 
     1024: {
@@ -30,9 +30,20 @@ let projectsSlider = new Swiper(sliderTwo, {
       slidesPerGroup: 2,
     },
 
+    1280: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+
+    1561: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+
     1920: {
       slidesPerView: 3,
-      slidesPerGroup: 3
-    }
-  }
+      slidesPerGroup: 3,
+    },
+  },
 });

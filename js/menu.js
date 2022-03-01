@@ -10,3 +10,5 @@ close.addEventListener("click", function () {
   document.querySelector(".header__menu").classList.remove("open");
 });
 
+
+

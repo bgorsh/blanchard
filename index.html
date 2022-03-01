@@ -1128,8 +1128,9 @@
               });
               var myGeoObject = new ymaps.GeoObject({
                           geometry: {
-                              type: "Point", // тип геометрии - точка
-                              coordinates: [55.758468, 37.601088] // координаты точки
+                              type: "Circle", // тип геометрии - круг
+                              coordinates: [55.758468, 37.601088], // координаты круга
+                              radius:20     
                           }
                       });
                 // Размещение геообъекта на карте.
