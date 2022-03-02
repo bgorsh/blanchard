@@ -1505,13 +1505,224 @@ svg path {
   margin-right: 20px;
 }
 
+@media (max-width: 1561px) {
+  .container {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  /* header */
+
+  .header-top {
+    width: 100%;
+  }
+
+  .header__container {
+    width: 1300px;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 173px;
+    height: 40px;
+  }
+
+  .nav__list {
+    margin-right: 221px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  .bottom-menu {
+    margin-right: 180px;
+  }
+
+  .bottom-menu__item:not(:last-child) {
+    margin-right: 37px;
+  }
+
+  /* gallery */
+
+  .gallery__left-part {
+    width: 325px;
+  }
+
+  .choices {
+    width: 325px;
+  }
+
+  .gallery__right-part {
+    width: 936px;
+  }
+
+  /* catalog */
+
+  .catalog__bottom-part--left {
+    width: 600px;
+  }
+
+  .accordeon {
+    width: 650px;
+  }
+
+  .accordeon__header {
+    width: 650px;
+  }
+
+  .accordeon__content {
+    width: 650px;
+  }
+
+  .accordeon__content-list {
+    width: 650px;
+    column-gap: 45px;
+  }
+
+  /* events */
+
+  .events__wrap {
+    align-items: center;
+  }
+
+  .events__slide-text--wrap {
+    width: 350px;
+    margin: 0 auto 153px auto;
+  }
+
+  .events__slide-link {
+    margin-left: 20px;
+  }
+
+  .events__btn {
+    margin-left: 560px;
+  }
+
+  /* contacts */
+
+  .contacts__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section-title {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .contacts__form {
+    flex-wrap: wrap;
+  }
+
+  .contacts__input-name,
+  .contacts__input-tel {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 1180px;
+    margin: 0 auto;
   }
 
-.social-icon_fb {
-  background-image: url('../img/fb.svg');
+  /* header */
+
+  .nav__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .header__bottom {
+    display: none;
+  }
+
+  /* gallery */
+
+  .gallery__left-part {
+    width: 295px;
+  }
+
+  .choices {
+    width: 295px;
+  }
+
+  .gallery__right-part {
+    width: 835px;
+  }
+
+  /* catalog */
+
+  .accordeon {
+    width: 590px;
+  }
+
+  .accordeon__header {
+    width: 590px;
+  }
+
+  .accordeon__content {
+    width: 590px;
+  }
+
+  .accordeon__content-list {
+    width: 580px;
+    column-gap: 20px;
+  }
+
+  /* events */
+
+  .events__slide-text--wrap {
+    width: 280px;
+    margin: 0 auto 180px auto;
+  }
+
+  .events__slide-link {
+    margin-left: 30px;
+  }
+
+  .events__btn {
+    margin-left: 500px;
+  }
+
+  /* contacts */
+
+  .contacts__wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .contacts__form {
+    width: 380px;
+  }
+
+  .contacts__text {
+    font-size: 18px;
+  }
+
+  .social-icon_fb {
+    background-image: url('../img/fb.svg');
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2158,6 +2369,12 @@ svg path {
     width: 400px;
   }
 
+  /* gallery */
+
+  .gallery__right-part {
+    width: 420px;
+  }
+
   /* catalog  */
 
   .catalog__section-wrap {
@@ -2225,6 +2442,9 @@ svg path {
     max-width: 290px;
     margin: 0 auto;
   }
+
+  /* header */
+  
   .header-top {
     width: 100%;
     padding: 12px 0;
@@ -2410,6 +2630,10 @@ svg path {
 
   .swiper-right-btns {
     margin: 0 auto;
+  }
+
+  .gallery__right-part {
+    width: 290px;
   }
 
   /*catalog*/
