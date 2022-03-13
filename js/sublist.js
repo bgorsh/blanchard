@@ -12,4 +12,4 @@ for (item of button) {
       this.classList.add('active');
     }
   })
-}
+  }
