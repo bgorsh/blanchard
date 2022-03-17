@@ -61,11 +61,28 @@ body {
   --hover-color: #7943a4;
 }
 
+content {
+  font-family: "Open Sans", sans-serif;
+}
+
+content h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+content p {
+  font-family: "Open Sans", sans-serif;
+}
+
+content input {
+  font-family: "Open Sans", sans-serif;
+}
+
 li {
   list-style: none;
 }
 
 a {
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
 
@@ -74,6 +91,7 @@ img {
 }
 
 .btn {
+  font-family: "Open Sans", sans-serif;
   border-radius: 0px;
   padding: 25px 38px;
   color: rgb(255, 255, 255);
