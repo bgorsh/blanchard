@@ -56,6 +56,10 @@ body {
   color: #333;
 }
 
+content body {
+  font-family: "Open Sans";
+}
+
 :root {
   --button-color: #9d5cd0;
   --hover-color: #7943a4;
@@ -75,6 +79,10 @@ content p {
 
 content input {
   font-family: "Open Sans", sans-serif;
+}
+
+content button {
+  font-family: "Open Sans";
 }
 
 li {
@@ -528,6 +536,7 @@ img {
 
 .gallery__choices-title {
   color: #fff;
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
   line-height: 32px;
@@ -557,6 +566,7 @@ img {
 }
 
 .choices__list {
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -871,18 +881,21 @@ img {
 
 .catalog__bottom-part--title {
   margin-top: 0px;
+  font-family: "Open Sans";
   font-size: 24px;
   font-weight: 600;
   line-height: 33px;
 }
 
 .catalog__bottom-part--descr {
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
 }
 
 .catalog__content-link {
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -910,6 +923,7 @@ img {
 }
 
 .catalog__bottom-part--signature {
+  font-family: "Open Sans";
   font-size: 24px;
   font-weight: 600;
   line-height: 32.68px;
@@ -918,6 +932,7 @@ img {
 }
 
 .catalog__bottom-part--date {
+  font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400;
   line-height: 16.34px;
@@ -926,6 +941,7 @@ img {
 }
 
 .catalog__bottom-part--text {
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -969,6 +985,7 @@ img {
 }
 
 .accordeon__header-content {
+  font-family: "Open Sans";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1037,6 +1054,7 @@ img {
 }
 
 .accordeon__content-list {
+  font-family: "Open Sans";
   display: grid;
   grid-template-columns: 197px 179px 176px;
   grid-template-rows: repeat(9, 32px);
@@ -1091,6 +1109,7 @@ img {
 
 .accordeon__content-text--title {
   max-width: 275px;
+  font-family: "Open Sans";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1101,6 +1120,7 @@ img {
 
 .accordeon__content-text {
   max-width: 275px;
+  font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -1111,6 +1131,7 @@ img {
 
 .accordeon__content-link {
   max-width: 275px;
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
@@ -1443,6 +1464,7 @@ img {
 }
 
 .contacts__form-button--mobile {
+  font-family: "Open Sans";
   display: none;
 }
 
