@@ -763,6 +763,7 @@ img {
 
 .catalog__section-wrap {
   width: 100%;
+  flex-direction: column;
 }
 
 .catalog__title-wrap {
@@ -1009,13 +1010,12 @@ img {
 
 .accordeon__content {
   position: relative;
-  width: 100%;
   align-items: center;
   height: 0;
   overflow: hidden;
-  opacity: 0;
   transition-property: height;
-  transition: 0.5s linear;
+  transition-duration: .8s;
+  transition-timing-function: linear;
 }
 
 .accordeon__content:last-child {
@@ -1031,8 +1031,7 @@ img {
 }
 
 .accordeon__header.open + .accordeon__content {
-  height: 338px;
-  opacity: 1;
+  min-height: 338px;
   padding: 12px 0;
 }
 
@@ -1055,16 +1054,16 @@ img {
 
 .accordeon__content-list {
   font-family: "Open Sans";
+  position: relative;
   display: grid;
   grid-template-columns: 197px 179px 176px;
   grid-template-rows: repeat(9, 32px);
   justify-items: stretch;
   grid-auto-flow: column;
-  column-gap: 60px;
+  column-gap: 7%;
   margin-bottom: 13px;
   margin-top: 14px;
   margin-left: -41px;
-  transition: opacity 0.5s linear;
 }
 
 .accordeon__content-btn {
@@ -1172,7 +1171,7 @@ img {
 
 .events__slide {
   width: 30%;
-  height: 700px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -1230,15 +1229,14 @@ img {
 }
 
 .events__slide-text--wrap {
-  max-width: 410px;
+  max-width: 80%;
   height: 186px;
-  margin-top: 3px;
-  margin-left: 50px;
-  margin-bottom: 73px;
+  margin: 0 auto;
 }
 
 .events__slide-link {
   margin-left: 50px;
+  margin-top: 73px;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -1446,12 +1444,12 @@ img {
 .contacts__form-button {
   width: 329px;
   height: 50px;
-  border: 2px solid var(--button-color);
+  border: 2px solid #9D5CD0;
   border-radius: 100px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24.5px;
-  color: var(--button-color);
+  color: #9D5CD0;
   cursor: pointer;
   transition-property: color, border-color;
   transition-duration: 0.5s;
@@ -1461,6 +1459,7 @@ img {
 .contacts__form-button:hover {
   color: var(--hover-color);
   border-color: var(--hover-color);
+  filter: drop-shadow(0px 0px 7px rgba(157, 92, 208, 0.6));
 }
 
 .contacts__form-button--mobile {
@@ -1597,6 +1596,24 @@ svg path {
     margin-right: 181px;
   }
 
+  /* catlog */
+
+  .catalog__bottom-part {
+    width: 100%;
+  }
+
+  .catalog__bottom-part--right {
+    width: 50%;
+  }
+
+  .accordeon {
+    width: 100%;
+  }
+
+  .accordeon__header {
+    width: 100%;
+  }
+
   @media (max-width: 1368px) {
     .header__menu {
       margin-left: 65px;
@@ -1634,24 +1651,28 @@ svg path {
   /* catalog */
 
   .catalog__bottom-part--left {
-    width: 600px;
+    width: 50%;
   }
 
   .accordeon {
-    width: 650px;
+    width: 100%;
   }
 
   .accordeon__header {
-    width: 650px;
+    width: 100%;
   }
 
-  .accordeon__content {
-    width: 650px;
+  .accordeon__header.open + .accordeon__content {
+    width: 100%;
+    min-height: 430px;
   }
 
   .accordeon__content-list {
-    width: 650px;
-    column-gap: 45px;
+    width: 100%;
+    height: 410px;
+    grid-template-columns: 206px 176px;
+    grid-template-rows: repeat(12, 32px);
+    column-gap: 7.8%;
   }
 
   /* events */
@@ -1662,10 +1683,11 @@ svg path {
 
   .events__slide-text--wrap {
     width: 350px;
-    margin: 0 auto 153px auto;
+    margin: 0 auto;
   }
 
   .events__slide-link {
+    margin-top: 53px;
     margin-left: 20px;
   }
 
@@ -1786,15 +1808,16 @@ svg path {
 
   .accordeon__content {
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: .8s;
+    transition-timing-function: linear;
   }
 
   .accordeon__content-list {
-    width: 100%;
     grid-template-columns: 206px 176px;
     grid-template-rows: repeat(12, 32px);
-    column-gap: 50px;
+    column-gap: 7.8%;
   }
 
   /* events */
@@ -1805,7 +1828,7 @@ svg path {
   }
 
   .events__slide-link {
-    margin-left: 30px;
+    margin-top: 53px;
   }
 
   .events__btn {
@@ -2001,7 +2024,7 @@ svg path {
   }
 
   .catalog__bottom-part--right {
-    width: 47%;
+    width: 50%;
   }
 
   .accordeon {
@@ -2014,9 +2037,7 @@ svg path {
 
   .accordeon__content {
     width: 100%;
-    max-height: 384px;
     overflow-x: hidden;
-    overflow-y: auto;
   }
 
   .accordeon__content-list {
@@ -2040,17 +2061,30 @@ svg path {
   /*events*/
 
   .events__slide {
-    height: 683px;
+    height: 725px;
   }
 
   .events__slide-text--wrap {
-    width: 222px;
+    width: 80%;
     height: 383px;
-    margin: 0 34px 22px 34px;
+    margin: 0 auto;
   }
 
   .events__slide-link {
     margin-left: 34px;
+    margin-top: 70px;
+  }
+
+  @media (max-width: 924px) {
+    .events__slide-link {
+      margin-top: -70px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .events__slide-link {
+      margin-top: -50px;
+    }
   }
 
   .swiper-pagination {
@@ -2324,12 +2358,12 @@ svg path {
 
   .events__container {
     width: 100%;
-    height: 730px;
+    height: 790px;
   }
 
   .events__slide {
     width: 100%;
-    height: 683px;
+    height: 720px;
   }
 
   .swiper-button-prev,
@@ -2353,7 +2387,23 @@ svg path {
   .events__slide-text--wrap {
     width: 90%;
     height: 340px;
-    margin: 0 37px 37px 37px;
+    margin: 0 auto;
+  }
+
+  .events__slide-link {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 577px) {
+    .events__slide-link {
+      margin-top: 140px;
+    }
+  }
+
+  @media (max-width: 505px) {
+    .events__slide-link {
+      margin-top: 180px;
+    }
   }
 
   .events__slide-title {
@@ -2544,8 +2594,9 @@ svg path {
     width: 100%;
   }
 
-  .accordeon__content {
+  .accordeon__header.open + .accordeon__content {
     width: 100%;
+    min-height: 720px;
   }
 
   .accordeon__content-list {
@@ -2569,6 +2620,16 @@ svg path {
     text-align: left;
     height: 360px;
     margin: 0 auto;
+  }
+
+  .events__slide-link {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 330px) {
+    .events__slide-link {
+      margin-top: 100px;
+    }
   }
 
   /* projects */
@@ -2908,7 +2969,7 @@ svg path {
   }
 
   .events__slide-text--wrap {
-    width: 244px;
+    width: 240px;
     height: 327px;
     margin: 0 auto 25px auto;
   }

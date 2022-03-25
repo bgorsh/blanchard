@@ -26,11 +26,23 @@ let eventsSlider = new Swiper(slider, {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
+
+    500: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
     },
+
+    924: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+
     1024: {
       slidesPerView: 3,
       slidesPerGroup: 3
