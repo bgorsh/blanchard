@@ -1532,15 +1532,37 @@ img {
 }
 
 .footer__social-block {
-  width: 10.6%;
+  width: 175px;
   height: 45px;
   display: flex;
   justify-content: space-between;
 }
 
+@media (max-width: 924px) {
+
+  .container {
+    max-width: 884px;
+    margin: 0 auto;
+  }
+
+  .footer__wrap {
+    padding: 0 20px;
+  }
+
+  .footer__social-block {
+    width: 140px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__social-block {
+    width: 175px;
+  }
+}
+
 .footer__social-icon {
-  width: 45px;
-  height: 45px;
+  width: 25.7%;
+  height: 100%;
   display: block;
   border: none;
   background-color: transparent;
@@ -1548,14 +1570,14 @@ img {
   transition: opacity 0.5s ease-in-out;
 }
 
+.footer__social-icon:not(:last-child) {
+  margin-right: 11.4%;
+}
+
 svg path {
   transition-property: fill, stroke;
   transition-duration: .5s;
   transition-timing-function: ease-in-out;
-}
-
-.footer__social-icon svg path {
-  stroke: #fff;
 }
 
 .footer__social-icon:hover svg path {
