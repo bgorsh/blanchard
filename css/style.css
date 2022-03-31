@@ -1158,7 +1158,7 @@ img {
   overflow: hidden;
   padding: 0 25px;
   width: 100%;
-  height: 730px;
+  min-height: 730px;
   margin-bottom: 67px;
 }
 
@@ -1217,7 +1217,7 @@ img {
 
 .events__slide-signature {
   position: relative;
-  width: 211px;
+  min-width: 42%;
   font-size: 12px;
   font-weight: 600;
   line-height: 16.34px;
@@ -1236,7 +1236,7 @@ img {
 
 .events__slide-link {
   margin-left: 50px;
-  margin-top: 73px;
+  margin-top: 10.4%;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -1367,8 +1367,6 @@ img {
   top: calc(50% - 15px);
   width: 30px;
   height: 30px;
-  background: #ececec;
-  text-align: center;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -1381,16 +1379,19 @@ img {
   right: 0px;
 }
 
-.projects__swiper-button-prev::after {
-  content: "\2039";
-  font-size: 24px;
-  text-align: middle;
+.projects__swiper-button-prev path,
+.projects__swiper-button-next path {
+  fill: #ececec;
 }
 
-.projects__swiper-button-next::after {
-  content: "\203A";
-  font-size: 24px;
-  text-align: middle;
+.projects__swiper-button-prev:hover path,
+.projects__swiper-button-next:hover path {
+  fill: #D1A9F0;
+}
+
+.projects__swiper-button-prev:active path,
+.projects__swiper-button-next:active path {
+  stroke: #9D5CD0;
 }
 
 /*section-contacts*/
@@ -1451,7 +1452,7 @@ img {
   line-height: 24.5px;
   color: #9D5CD0;
   cursor: pointer;
-  transition-property: color, border-color;
+  transition-property: color, border-color, background-color, filter;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
@@ -1459,6 +1460,7 @@ img {
 .contacts__form-button:hover {
   color: var(--hover-color);
   border-color: var(--hover-color);
+  background-color: #eaeaea;
   filter: drop-shadow(0px 0px 7px rgba(157, 92, 208, 0.6));
 }
 
@@ -1933,7 +1935,7 @@ svg path {
 
   .header__logo {
     width: 187px;
-    margin-left: 220px;
+    margin-left: 23.8%;
   }
 
   .header__menu {
@@ -2417,6 +2419,10 @@ svg path {
   }
 
   @media (max-width: 577px) {
+    .hero__title {
+      font-size: 50px;
+    }
+
     .events__slide-link {
       margin-top: 140px;
     }
@@ -2530,13 +2536,11 @@ svg path {
   .burger {
     width: 28px;
     height: 20px;
-    cursor: pointer;
   }
 
   .header__logo {
     width: 106px;
     height: 26px;
-    margin-left: -10px;
   }
 
   /* hero */
@@ -2631,21 +2635,28 @@ svg path {
 
   .events__container {
     width: 100%;
+    height: 930px;
   }
 
   .events__slide {
     width: 100%;
+    padding-bottom: 20px;
+    min-height: 860px;
+  }
+
+  .events__slide-signature {
+    width: 42%;
   }
 
   .events__slide-text--wrap {
     width: 85%;
+    height: 860px;
     text-align: left;
-    height: 360px;
     margin: 0 auto;
   }
 
   .events__slide-link {
-    margin-top: 20px;
+    margin-top: -180px;
   }
 
   @media (max-width: 330px) {
@@ -2768,7 +2779,7 @@ svg path {
   .header__logo {
     width: 97px;
     height: 20px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .header__menu {

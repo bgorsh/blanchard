@@ -6,7 +6,7 @@ let projectsSlider = new Swiper(sliderTwo, {
   slidesPerGroup: 3,
   slideClass: "projects__slider-slide",
   wrapperClass: "projects__slider-wrapper",
-  spaceBetween: 50,
+  spaceBetween: 80,
   navigation: {
     nextEl: ".projects__swiper-button-next",
     prevEl: ".projects__swiper-button-prev",
