@@ -1422,6 +1422,7 @@ img {
   max-width: 270px;
   height: 50px;
   padding-left: 24px;
+  background-color: #fff;
   border: 1px solid #333;
   border-radius: 100px;
   margin-right: 20px;
@@ -1450,6 +1451,7 @@ img {
   font-size: 18px;
   font-weight: 700;
   line-height: 24.5px;
+  background-color: #fff;
   color: #9D5CD0;
   cursor: pointer;
   transition-property: color, border-color, background-color, filter;
