@@ -28,8 +28,8 @@ let eventsSlider = new Swiper(slider, {
     },
 
     500: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
     },
 
     768: {
