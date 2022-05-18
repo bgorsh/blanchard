@@ -1124,6 +1124,7 @@ img {
 .events__wrap {
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 .events__title {
@@ -1251,17 +1252,23 @@ img {
   padding: 15.5px 34px;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
+  margin-left: 45%;
+  transition: color, background-color 0.5s ease-in-out;
+}
+
+.events__btn-link {
   font-size: 18px;
   font-weight: 700;
   line-height: 24.5px;
   color: #9d5cd0;
-  margin-left: 705px;
-  transition: color, background-color 0.5s ease-in-out;
 }
 
 .events__btn:hover {
-  color: #fff;
   background-color: var(--button-color);
+}
+
+.events__btn:hover .events__btn-link {
+  color: #fff;
 }
 
 /*section-projects*/
@@ -1553,13 +1560,13 @@ img {
   }
 
   .footer__social-block {
-    width: 16%;
+    width: 25vw;
   }
 }
 
 @media (max-width: 540px) {
   .footer__social-block {
-    width: 175px;
+    width: 30vw;
   }
 }
 
@@ -1717,7 +1724,7 @@ svg path {
   }
 
   .events__btn {
-    margin-left: 560px;
+    margin-left: 45%;
   }
 
   /* contacts */
@@ -1857,7 +1864,7 @@ svg path {
   }
 
   .events__btn {
-    margin-left: 500px;
+    margin-left: 45%;
   }
 
   /* contacts */
@@ -2014,6 +2021,10 @@ svg path {
 
   /*Hero*/
 
+  .hero  {
+    z-index: -5;
+  }
+
   .hero__container {
     width: 661px;
     height: 449px;
@@ -2098,7 +2109,7 @@ svg path {
   }
 
   .events__slide-link--wrap {
-    margin-left: 3%;
+    margin-left: 5%;
   }
 }
 
@@ -2646,7 +2657,7 @@ svg path {
   }
 
   .footer__social-block {
-    width: 60%;
+    width: 50%;
   }
 
   .footer__social-icon {
@@ -3061,6 +3072,7 @@ svg path {
   }
 
   .footer__social-block {
+    width: 50vw;
     margin-bottom: 20px;
   }
 
