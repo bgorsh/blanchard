@@ -22,7 +22,7 @@ let eventsSlider = new Swiper(slider, {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    320: {
+    375: {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },

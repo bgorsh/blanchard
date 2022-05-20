@@ -2321,7 +2321,6 @@ svg path {
   .gallery-wrap {
     position: relative;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .gallery__left-part {
@@ -2330,9 +2329,9 @@ svg path {
   }
 
   .gallery__right-part {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 15em;
+    margin-bottom: 9em;
   }
 
   .choices {
@@ -2340,7 +2339,12 @@ svg path {
   }
 
   .gallery__top-part {
-    margin-bottom: 54em;
+    margin-bottom: 3em;
+  }
+
+  .gallery__bottom-part {
+    position: absolute;
+    top: 70em;
   }
 
   /*catalog*/
@@ -2399,11 +2403,13 @@ svg path {
 
   .events__container {
     width: 100%;
-    height: 790px;
+    padding-bottom: 2em;
   }
 
   .events__slide {
     width: 100%;
+    padding-bottom: 1.5em;
+    margin-bottom: 3em;
   }
 
   .swiper-button-prev,
@@ -2421,6 +2427,11 @@ svg path {
     height: 20px;
     line-height: 10px;
     font-size: 7px;
+    border: 1px solid #333;
+    background-color: #cacaca;
+  }
+
+  .events__container .swiper-pagination-bullet:focus {
     background-color: #666;
   }
 
@@ -2583,7 +2594,6 @@ svg path {
 
   .events__container {
     width: 100%;
-    height: 930px;
   }
 
   .events__slide {
@@ -2666,9 +2676,9 @@ svg path {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .container {
-    max-width: 290px;
+    max-width: 360px;
     margin: 0 auto;
     font-size: .875rem;
   }
@@ -2681,7 +2691,7 @@ svg path {
   }
 
   .header__container {
-    width: 290px;
+    width: 360px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2787,17 +2797,14 @@ svg path {
 
   .header-top__search {
     display: block;
-    margin-top: 10px;
+    width: 1em;
+    height: 1em;
+    margin-top: -15px;
     margin-right: 15px;
   }
 
   .header-top__search-input {
     display: none;
-  }
-
-  .search__btn {
-    width: 16px;
-    height: 16px;
   }
 
   /*hero*/
@@ -2830,6 +2837,7 @@ svg path {
     font-size: 12px;
     font-weight: 700;
     line-height: 16.34px;
+    margin-left: 12%;
   }
 
   /*about*/
@@ -2858,13 +2866,8 @@ svg path {
     padding: 40px 0;
   }
 
-  .gallery__left-part {
-    height: 88em;
-    justify-content: space-between;
-  }
-
   .gallery__right-part {
-    top: 16em;
+    margin-top: 3em;
   }
 
   .swiper-right--content {
@@ -2878,10 +2881,11 @@ svg path {
 
   .gallery__right-part {
     width: 100%;
+    margin-bottom: 13.8em;
   }
 
   .gallery__bottom-part {
-    margin-bottom: 40px;
+    top: 67em;
   }
 
   /*catalog*/
@@ -2958,13 +2962,13 @@ svg path {
     padding: 0;
   }
 
+  .events__slide {
+    height: 80%;
+  }
+
   .events__slide-text--wrap {
     width: 80%;
     margin: 0 10%;
-  }
-
-  .events__slide {
-    padding-bottom: 3em;
   }
 
   .events__slide-title {
