@@ -653,7 +653,7 @@ img {
 
 .swiper-btn--prev,
 .swiper-btn--next {
-  width: 35px;
+  width: 30px;
   height: 30px;
   cursor: pointer;
   background-color: transparent;
@@ -671,6 +671,31 @@ img {
   height: calc((100% - 50px) / 2);
 }
 
+.swiper-right--content .swiper-slide:before {
+  content: "";
+  position: absolute;
+  max-width: 300px;
+  max-height: 300px;
+  top: 25px;
+  bottom: 25px;
+  right: 25px;
+  left: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../img/hover-icon.svg");
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0;
+  transition-property: z-index, opacity;
+  transition: 0.5s ease-in-out;
+}
+
+.swiper-slide:hover:before {
+  z-index: 1;
+  opacity: 1;
+}
+
 .swiper-right-btns {
   max-width: 130px;
   height: 30px;
@@ -682,8 +707,7 @@ img {
 }
 
 .swiper-pagination--right {
-  max-width: 45px;
-  height: 30px;
+  transform: translateX(7px);
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
@@ -693,30 +717,28 @@ img {
 }
 
 .swiper-btn--prev {
-  width: 35px;
+  width: 30px;
   height: 30px;
   margin-right: 15px;
-  background-image: url("../img/arrow_left.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: background-color 0.5s ease-in-out;
+  margin-top: -20px;
+  transition: fill 0.5s ease-in-out;
 }
 
 .swiper-btn--next {
-  width: 35px;
+  width: 30px;
   height: 30px;
-  background-image: url("../img/arrow_right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: background 0.5s ease-in-out;
+  margin-top: -20px;
+  transition: fill 0.5s ease-in-out;
 }
 
-.swiper-btn--prev:hover,
-.swiper-btn--next:hover {
-  background: rgba(190, 116, 247);
-  border-radius: 50%;
+.swiper-btn--prev:hover path,
+.swiper-btn--next:hover path {
+  fill: #be74f7;
+}
+
+.swiper-btn--prev:active path,
+.swiper-btn--next:active path {
+  fill: #7943A4;
 }
 
 .sw-btn.swiper-button-disabled {
@@ -725,6 +747,7 @@ img {
 }
 
 .swiper-slide--img {
+  position: relative;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -1246,29 +1269,6 @@ img {
   font-weight: 400;
   line-height: 32px;
   margin-top: 0;
-}
-
-.events__btn {
-  padding: 15.5px 34px;
-  border: 2px solid #9d5cd0;
-  border-radius: 100px;
-  margin-left: 45%;
-  transition: color, background-color 0.5s ease-in-out;
-}
-
-.events__btn-link {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24.5px;
-  color: #9d5cd0;
-}
-
-.events__btn:hover {
-  background-color: var(--button-color);
-}
-
-.events__btn:hover .events__btn-link {
-  color: #fff;
 }
 
 /*section-projects*/
