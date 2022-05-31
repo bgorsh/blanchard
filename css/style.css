@@ -676,10 +676,10 @@ img {
   position: absolute;
   max-width: 300px;
   max-height: 300px;
-  top: 25px;
-  bottom: 25px;
-  right: 25px;
-  left: 25px;
+  top: 7%;
+  bottom: 7%;
+  right: 7%;
+  left: 7%;
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../img/hover-icon.svg");
   background-size: 20%;
@@ -728,7 +728,6 @@ img {
   width: 30px;
   height: 30px;
   margin-top: -20px;
-  transition: fill 0.5s ease-in-out;
 }
 
 .swiper-btn--prev:hover path,
@@ -1410,8 +1409,13 @@ img {
   margin-top: 0;
 }
 
-.contacts__form {
+.contacts__form-wrapper {
   width: 55%;
+  height: 100%;
+}
+
+.contacts__form {
+  width: 100%;
   flex-direction: row;
 }
 
@@ -1712,11 +1716,6 @@ svg path {
   .events__wrap {
     align-items: center;
   }
-
-  /* .events__slide-text--wrap {
-    width: 350px;
-    margin: 0 auto;
-  } */
 
   .events__slide-link {
     margin-top: 53px;
@@ -2304,6 +2303,7 @@ svg path {
 
   .hero__container {
     width: 84%;
+    max-height: 768px;
   }
 
   .hero__title {
@@ -2503,6 +2503,10 @@ svg path {
   }
 
   /* hero */
+
+  .hero {
+    max-height: 768px;
+  }
 
   .hero__container {
     width: 98%;
@@ -2811,6 +2815,7 @@ svg path {
 
   .hero {
     margin-bottom: 50px;
+    max-height: 465px;
   }
 
   .hero__container {
@@ -2829,6 +2834,7 @@ svg path {
     font-size: 12px;
     font-weight: 400;
     line-height: 16.34px;
+    margin-bottom: 85px;
     text-align: center;
   }
 
