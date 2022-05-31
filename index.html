@@ -1116,8 +1116,14 @@
             </div>
             <div class="contacts__form-wrapper">
               <form action="#" method="post" class="contacts__form">
-                <input type="text" required data-validate-field="name" placeholder="Имя*" class="contacts__input-name">
-                <input type="tel" data-validate-field="tel" name="телефон" required placeholder="Телефон*" class="contacts__input-tel">
+                <div class="contacts__input-wrap">
+                  <input type="text" required data-validate-field="name" placeholder="Имя*" class="contacts__input-name">
+                  <span class="requere-messages"></span>
+                </div>
+                <div class="contacts__input-wrap">
+                  <input type="tel" data-validate-field="tel" name="телефон" required placeholder="Телефон*" class="contacts__input-tel">
+                  <span class="requere-messages"></span>
+                </div>
                 <button type="submit" class="contacts__form-button btn-reset">Заказать обратный звонок</button>
                 <button type="submit" class="contacts__form-button--mobile btn-reset">Заказать</button>
               </form>
