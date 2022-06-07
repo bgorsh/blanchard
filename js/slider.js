@@ -16,7 +16,7 @@ let gallerySlider = new Swiper(".swiper-right--content", {
   },
 
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 1,
       grid: {
         rows: 2,
