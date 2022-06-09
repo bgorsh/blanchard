@@ -1855,6 +1855,12 @@ svg path {
     display: none;
   }
 
+  /*hero*/
+
+  .hero {
+    z-index: -2;
+  }
+
   /* gallery */
 
   .gallery__left-part {
@@ -2993,6 +2999,7 @@ svg path {
   .hero {
     margin-bottom: 50px;
     max-height: 465px;
+    z-index: -2;
   }
 
   .hero__container {
