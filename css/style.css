@@ -1438,6 +1438,13 @@ svg path {
   right: 0px;
 }
 
+.projects__swiper-button-prev svg path,
+.projects__swiper-button-next svg path {
+  transition-property: fill, stroke;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+}
+
 .projects__swiper-button-prev path,
 .projects__swiper-button-next path {
   fill: #ececec;
@@ -1448,9 +1455,9 @@ svg path {
   fill: #D1A9F0;
 }
 
-.projects__swiper-button-prev:active path,
-.projects__swiper-button-next:active path {
-  stroke: #9D5CD0;
+.projects__swiper-button-prev:focus path,
+.projects__swiper-button-next:focus path {
+  fill: #9D5CD0;
 }
 
 /*section-contacts*/
@@ -2956,6 +2963,11 @@ svg path {
   .contacts__wrap {
     width: 420px;
     height: 484px;
+  }
+
+  .contacts__form-wrapper {
+    width: 80%;
+    margin-left: -60px;
   }
 
   .contacts__form {
